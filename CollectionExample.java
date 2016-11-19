@@ -10,38 +10,38 @@ class CollectionExample
 		
 		Date start;
 		Date end;
-		long difference1, difference2;
-		long difference3, difference4;
+		long df11, df12;
+		long df13, df14;
 		
 		
 		start = new Date();
 		populate(a);
 		end   = new Date();
-		difference1 = end.getTime() - start.getTime();
+		df11 = end.getTime() - start.getTime();
 		
 		
 		start = new Date();
 		populate(l);
 		end   = new Date();
-		difference2 = end.getTime() - start.getTime();
+		df12 = end.getTime() - start.getTime();
 		
 		
 		
 		start = new Date();
 		print(a);
 		end   = new Date();
-		difference3 = end.getTime() - start.getTime();
+		df13 = end.getTime() - start.getTime();
 		
 		start = new Date();
 		print(l);
 		end   = new Date();
-		difference4 = end.getTime() - start.getTime();
+		df14 = end.getTime() - start.getTime();
 		
-		System.out.println("Time in Populating ArrayList elements  :: " + difference1);
-		System.out.println("Time in Printing   ArrayList elements  :: " + difference3);
+		System.out.println("Time in ArrayList elements  :: " + df11);
+		System.out.println("Time in Printing   ArrayList elements  :: " + df13);
 		
-		System.out.println("Time in Populating LinkedList elements :: " + difference2);
-		System.out.println("Time in Printing   LinkedList elements :: " + difference4);
+		System.out.println("Time in  LinkedList elements :: " + df12);
+		System.out.println("Time in Printing   LinkedList elements :: " + df14);
 		
 	}
 	
@@ -49,7 +49,7 @@ class CollectionExample
 	{
 		for(int i=0; i < 5000; i++)
 		{
-			a.add("Element #" + Integer.toString(i+1));
+			a.add(Integer.toString(i+1));
 		}
 	}	
 	
