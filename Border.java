@@ -55,45 +55,42 @@ public class Border implements ActionListener
 		
 		
 		
-	
-		JButton btn1 = new JButton("RED");
-        btn1.setName("RED");
-		btn1.addActionListener(new Border());
-		//btn1.addActionListener(this);
-		Top.add(btn1);
-		
-        JButton btn2 = new JButton("YELLOW");
-		btn2.setName("YELLOW");
-		btn2.addActionListener(new Border());
-		//btn2.addActionListener(this);
-        Top.add(btn2);
-        
-        JButton btn3 = new JButton("BLUE");
-		btn3.setName("BLUE");
-		btn3.addActionListener(new Border());
-		//btn3.addActionListener(this);
-        Top.add(btn3);
-    
-	
-	
-
-			
-        JButton btn4 = new JButton("GREEN");
-		btn4.setName("GREEN");
-		btn4.addActionListener(new Border());
-		//btn4.addActionListener(this);
-        Top.add(btn4);
-		
-        JButton btn5 = new JButton("ORANGE");
-		btn5.setName("ORANGE");
-		btn5.addActionListener(new Border());
-		//btn5.addActionListener(this);
-        Top.add(btn5);
 		
 		Left = new JPanel(new FlowLayout());
 		Left.setSize(new Dimension(250, 600));
 		Left.setBorder(BorderFactory.createLineBorder(Color.BLUE));
 		container.add(Left, BorderLayout.LINE_START);
+		
+		JButton btn1 = new JButton("RED");
+        btn1.setName("RED");
+		btn1.addActionListener(new Border());
+		//btn1.addActionListener(this);
+		Left.add(btn1);
+		
+        JButton btn2 = new JButton("YELLOW");
+		btn2.setName("YELLOW");
+		btn2.addActionListener(new Border());
+		//btn2.addActionListener(this);
+        Left.add(btn2);
+        
+        JButton btn3 = new JButton("BLUE");
+		btn3.setName("BLUE");
+		btn3.addActionListener(new Border());
+		//btn3.addActionListener(this);
+        Left.add(btn3);
+    
+        JButton btn4 = new JButton("GREEN");
+		btn4.setName("GREEN");
+		btn4.addActionListener(new Border());
+		//btn4.addActionListener(this);
+        Left.add(btn4);
+		
+        JButton btn5 = new JButton("ORANGE");
+		btn5.setName("ORANGE");
+		btn5.addActionListener(new Border());
+		//btn5.addActionListener(this);
+        Left.add(btn5);
+	
 		
 		
 		JCheckBox Left_Chek = new JCheckBox(" Left ");
